@@ -1,0 +1,5 @@
+<!--対象のvalueを、カッコ内のものに変更する。-->
+<!--(セレクタ).val();-->
+$("#favorite-btn_<%= @book.id %>").html("<%= j(render 'favorites/favorite-btn', book: @book) %>");
+ <!--インスタンス変数は、favorites_controllerのcreateアクションで定義されたもの-->
+  <!--//html()以降は部分テンプレートを呼び出している-->
